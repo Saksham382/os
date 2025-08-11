@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    height: 100vh;
+    background: linear-gradient(135deg, #dd3f99, #982a47);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.center {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #e0e0e0;
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.2); /* Light white border */
+    border-top: 8px solid #ffffff; /* White border-top to create spinning effect */
+    border-radius: 50%; /* Makes the loader circular */
+    width: 80px;
+    height: 80px;
+    animation: spin 1.5s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Soft glow effect */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
